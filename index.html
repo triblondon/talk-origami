@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Origami - Andrew Betts</title>
+
+		<meta name="description" content="A presentaiton about the FT's new front end component framework">
+		<meta name="author" content="Andrew Betts">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/ftlabs.css" id="theme">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+		<script src="lib/js/chart.min.js"></script>
+	</head>
+
+	<body>
+	<div class='pointer'></div>
+
+		<div class="reveal">
+			<div class="slides">
+
+				<section class='logo-title dark-background' data-background='css/theme/ftlabs_images/purple-blue-2.jpg'>
+					<h1>Origami</h1>
+					<h2>A new front end component strategy for FT</h2>
+					<h3>Andrew Betts, FT Labs</h3>
+					<p>
+						<a href="http://twitter.com/triblondon">@triblondon</a>, <a href="http://twitter.com/FTLabs">@FTLabs</a>
+					</p>
+				</section>
+
+				<section>
+					<ul class='steplist'>
+						<li><strong>Six hundred</strong> domain names</li>
+						<li><strong>Eight hundred</strong> ft.com subdomains</li>
+						<li><strong>Three</strong> separate digital channels</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Problems</h2>
+					<ul class='steplist'>
+						<li>Repeating work</li>
+						<li>Unable to let go of old tech</li>
+						<li>Experts needed everywhere</li>
+						<li>Square pegs, round holes</li>
+						<li>Learning 'cliff'</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Single channel future</h2>
+					<p>Many others (Guardian, BBC, Gov.UK, Boston Globe) have built single-channel sites that serve all devices with a single website.  Ultimately, we should too, because</p>
+					<ul>
+						<li>Same URL for an article, regardless of platform</li>
+						<li>Much lower cost to maintain</li>
+						<li>More consistent experience for users</li>
+						<li>Easier to comply with accessibility obligations</li>
+						<li>Better prepared for Web Components to change how we build websites</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>How to get there</h2>
+					<ul>
+						<li>Build reusable components that we can share between products</li>
+						<li>Design at component level, not page level</li>
+						<li>Have a standard, so things are easy to understand and use</li>
+						<li>Align design with implementation using a living style guide</li>
+						<li>Use powerful and flexible versioning and packaging</li>
+						<li>As far as possible, use public standards</li>
+					</ul>
+				</section>
+
+				<section class='big-quote dark-background' data-background='css/theme/ftlabs_images/blue-orange-yellow.jpg'>
+					<blockquote>Create a <strong>Living style guide</strong> to improve performance.</blockquote>
+					<cite>Nicole Sullivan</cite>
+				</section>
+
+				<section><img src='content/githubstyle.png' class='stretch'></section>
+				<section><img src='content/govukstyle.png' class='stretch'></section>
+				<section><img src='content/bbcstyle.png' class='stretch'></section>
+
+				<section><img src='http://financial-times.github.io/ft-origami/img/componentspage.png' class='stretch'></section>
+
+				<section><img src='http://financial-times.github.io/ft-origami/img/componentspage2.png' class='stretch'></section>
+
+				<section><img src='content/bbccarousel.png' class='stretch'></section>
+
+				<section>
+					<h2>Package dependencies</h2>
+					<img src='content/packagedeps.png' class='stretch'>
+				</section>
+
+				<section><img src='content/semver.png' class='stretch'></section>
+
+				<section>
+					<h2>Consultation</h2>
+					<ul class='steplist'>
+						<li>BBC (Simon Stevenson)</li>
+						<li>CBC (Barbara Bermes)</li>
+						<li>GDS (Frances Berriman)</li>
+						<li>Sky (Harry Roberts)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Working in public</h2>
+					<p><a href='http://financial-times.github.io/ft-origami'>http://financial-times.github.io/ft-origami</a></p>
+				</section>
+
+				<section><img src='content/origamimod-header.png' class='stretch'></section>
+				<section><img src='content/origamimod-colors.png' class='stretch'></section>
+
+				<section>
+					<h2>In summary: catching up</h2>
+					<ul class='steplist'>
+						<li>Build components, not pages</li>
+						<li>Respond to content, not devices</li>
+						<li>Integrate design with dev in a living style guide</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>In summary: pioneering</h2>
+					<ul class='steplist'>
+						<li>Make everything modular</li>
+						<li>Package management for SASS</li>
+						<li>Fully scalable architecture</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What we've done so far</h2>
+					<ul>
+						<li>Tested packaging solutions</li>
+						<li>Written a standard</li>
+						<li>Taken extensive advice</li>
+						<li>Built about 10 sample components</li>
+						<li>Started creating tools to support the framework</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Roadmap</h2>
+					<ul>
+						<li>Finish build service and registry tools</li>
+						<li>Build a living style guide</li>
+						<li>Build more components</li>
+						<li>Encourage internal teams to identify component use cases</li>
+						<li>Provide support internally to component authors</li>
+						<li>Use components in production: replace legacy code, remove inconsistencies, use in new projects</li>
+					</ul>
+				</section>
+
+				<section class='logo-title dark-background' data-background='css/theme/ftlabs_images/purple-blue-2.jpg'>
+					<h1>That's it!</h1>
+					<h3>Contact me:</h3>
+					<ul>
+						<li>Email: <a href='mailto:andrew@labs.ft.com'>andrew@labs.ft.com</a></li>
+						<li>Twitter: <a href='http://twitter.com/@triblondon'>@triblondon</a>, <a href='http://twitter.com/@ftlabs'>@ftlabs</a></li>
+					</ul>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script>
+			Reveal.initialize({
+				width: 1280,
+    			height: 800,
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+				theme: 'ftlabs',
+				transition: 'linear',
+				backgroundTransition: 'slide',
+				transitionSpeed: 'fast',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+			// Add background effect for big headings
+			Reveal.addEventListener('slidechanged', function(e) {
+				if (e.currentSlide.classList.contains('big-quote')) {
+					var h1 = e.currentSlide.querySelector('h1');
+					if (h1 && !e.currentSlide.querySelector('span.bghead')) {
+						var bgh1 = document.createElement('span');
+						bgh1.classList.add('bghead');
+						bgh1.innerHTML = h1.innerHTML;
+						h1.parentNode.appendChild(bgh1);
+					}
+				}
+			});
+
+			// Animate steplists
+			Reveal.addEventListener('slidechanged', function(e) {
+				var ul = e.currentSlide.querySelector('ul.steplist');
+				if (ul) {
+					if (ul.classList.contains('active')) {
+						ul.classList.remove('active');
+					}
+					setTimeout(function() {
+						ul.classList.add('active');
+					}, 0);
+				}
+			});
+
+			// Play videos
+			Reveal.addEventListener('slidechanged', function(e) {
+				var vid = e.currentSlide.querySelector('video');
+				if (vid) {
+					vid.currentTime = 0;
+					vid.play();
+				}
+			});
+
+			// Chart on slide 13
+			(function() {
+				Reveal.addEventListener('slidechanged', function(e) {
+					if (e.indexh == 15) {
+						var crt = document.getElementById("chart1");
+						crt.style.width = (crt.width = crt.parentNode.offsetWidth)+'px';
+						crt.style.height = (crt.height = crt.parentNode.offsetHeight)+'px';
+						new Chart(crt.getContext("2d")).Bar({
+							labels : ["Chrome browser", "Chrome packaged", "Playbook wrapper", "Windows 8 wrapper"],
+							datasets : [
+								{
+									fillColor : "#00A9E0",
+									data : [900, 930, 5200, 3300]
+								},
+								{
+									fillColor : "#FFA02F",
+									data : [600, 750, 1950, 2020]
+								}
+							]
+						}, {
+							scaleOverlay: false,
+							scaleOverride: true,
+							scaleSteps: 6,
+							scaleStepWidth: 1000,
+							scaleStartValue: 0,
+							scaleLineColor : "rgba(0,0,0,.3)",
+							scaleFontSize : 25,
+						});
+					}
+				});
+			}());
+
+		</script>
+
+	</body>
+</html>
